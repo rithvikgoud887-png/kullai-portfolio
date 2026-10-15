@@ -1,0 +1,1392 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Murikinati Kullai Reddy | AI & ML Engineer | Python Developer</title>
+  <meta name="description" content="Portfolio of Murikinati Kullai Reddy - B.Tech in Artificial Intelligence & Machine Learning at Mohan Babu University. Specializing in AI/ML, Deep Learning, Computer Vision, and Python Development.">
+  <meta name="keywords" content="Murikinati Kullai Reddy, AI Engineer, Machine Learning, Python Developer, PyTorch, OpenCV, Mohan Babu University, Tirupati, DeepLearning.AI, Fingerprint Blood Group Prediction">
+  <meta name="author" content="Murikinati Kullai Reddy">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Murikinati Kullai Reddy | AI & ML Engineer Portfolio">
+  <meta property="og:description" content="AI & Machine Learning Engineer specializing in Computer Vision, PyTorch, and Python. Explore my flagship Fingerprint Blood Group Prediction System and ML projects.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Plus Jakarta Sans, Outfit & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Neural Mesh Background Canvas -->
+  <canvas id="neuralCanvas" class="neural-canvas"></canvas>
+
+  <!-- Ambient Light Orbs -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- Sticky Glassmorphic Header Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo" id="brandLogo">
+        <span class="logo-symbol">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+        </span>
+        <span class="logo-text">MKR<span class="logo-dot">.ai</span></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#flagship-project" class="nav-link">Flagship Project</a>
+        <a href="#analytics-lab" class="nav-link">AI/Data Lab</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button id="themeToggleBtn" class="action-btn theme-toggle" title="Toggle Light / Dark Mode" aria-label="Toggle Theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Resume Modal Trigger -->
+        <button id="openResumeModalBtn" class="btn btn-outline-sm">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+          Resume
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobileMenuBtn" class="mobile-toggle" aria-label="Toggle Mobile Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="status-pill animate-fade-in">
+            <span class="pulse-indicator"></span>
+            <span class="status-text">Seeking Entry-Level Roles: SWE • AI/ML • Python Developer</span>
+          </div>
+
+          <h1 class="hero-title animate-slide-up">
+            Hi, I'm <span class="gradient-text">Murikinati Kullai Reddy</span>
+          </h1>
+
+          <div class="typewriter-container animate-slide-up-delay-1">
+            <span class="typewriter-prefix">Specializing in </span>
+            <span id="typewriterText" class="typewriter-text"></span>
+            <span class="cursor-blink">|</span>
+          </div>
+
+          <p class="hero-summary animate-slide-up-delay-2">
+            B.Tech in Artificial Intelligence & Machine Learning graduate from <strong>Mohan Babu University</strong>.
+            Passionate about applying Computer Vision, PyTorch, and explainable deep learning pipelines to solve challenging real-world problems.
+            Strong foundation in algorithmic problem solving, Python development, and data analytics.
+          </p>
+
+          <div class="hero-actions animate-slide-up-delay-3">
+            <a href="#flagship-project" class="btn btn-primary" id="exploreProjectBtn">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+              Explore Flagship Project
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              Contact Me
+            </a>
+            <button id="quickCopyEmailBtn" class="btn btn-ghost" title="Copy email: kullaireddy882@gmail.com">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span>Copy Email</span>
+            </button>
+          </div>
+
+          <!-- Highlight Stats Banner -->
+          <div class="hero-metrics-grid animate-fade-in-delay">
+            <div class="metric-card">
+              <div class="metric-val">7.16 <span class="metric-unit">/ 10</span></div>
+              <div class="metric-label">B.Tech CGPA (AI & ML)</div>
+              <div class="metric-sub">Mohan Babu University</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-val">98.2<span class="metric-unit">%</span></div>
+              <div class="metric-label">Class X Board Exam</div>
+              <div class="metric-sub">Academic Excellence</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-val">8-Class</div>
+              <div class="metric-label">Biometric Blood Group Model</div>
+              <div class="metric-sub">PyTorch & Captum XAI</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-val">3+</div>
+              <div class="metric-label">Industry Certifications</div>
+              <div class="metric-sub">Deloitte • DeepLearning.AI • Skill AP</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="biometric-hud-card">
+            <div class="hud-header">
+              <div class="hud-status">
+                <span class="hud-dot"></span>
+                <span>MODEL SYSTEM ACTIVE</span>
+              </div>
+              <span class="hud-version">PyTorch v2.1 • ONNX</span>
+            </div>
+
+            <div class="hud-scanner-box">
+              <div class="scanner-grid"></div>
+              <div class="scanner-laser"></div>
+              
+              <!-- SVG Biometric Fingerprint Graphic -->
+              <svg class="fingerprint-hud-svg" viewBox="0 0 160 200" fill="none" stroke="currentColor">
+                <path d="M80 20 C50 20 28 42 28 72 C28 115 48 145 48 180" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="4 2"/>
+                <path d="M80 32 C58 32 40 50 40 74 C40 110 58 135 60 170" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M80 44 C65 44 52 58 52 76 C52 105 66 128 70 160" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M80 56 C71 56 64 64 64 78 C64 100 74 120 78 150" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M80 68 C76 68 72 72 72 80 C72 95 78 110 80 140" stroke-width="2.5" stroke-linecap="round"/>
+                <!-- Center Core -->
+                <ellipse cx="80" cy="85" rx="4" ry="8" stroke-width="2.5"/>
+                <!-- Right Arcs -->
+                <path d="M80 20 C110 20 132 42 132 72 C132 115 112 145 112 180" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="4 2"/>
+                <path d="M80 32 C102 32 120 50 120 74 C120 110 102 135 100 170" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M80 44 C95 44 108 58 108 76 C108 105 94 128 90 160" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M80 56 C89 56 96 64 96 78 C96 100 86 120 82 150" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M80 68 C84 68 88 72 88 80 C88 95 82 110 80 140" stroke-width="2.5" stroke-linecap="round"/>
+              </svg>
+
+              <!-- Minutiae point markers -->
+              <div class="hud-marker marker-1" style="top: 38%; left: 34%;" title="Bifurcation Point #14"></div>
+              <div class="hud-marker marker-2" style="top: 52%; left: 62%;" title="Ridge Ending #09"></div>
+              <div class="hud-marker marker-3" style="top: 68%; left: 45%;" title="Core Minutiae #27"></div>
+            </div>
+
+            <div class="hud-telemetry">
+              <div class="telemetry-item">
+                <span class="telemetry-label">INFERENCE LATENCY</span>
+                <span class="telemetry-val text-success">14.2 ms</span>
+              </div>
+              <div class="telemetry-item">
+                <span class="telemetry-label">TOP PREDICTION</span>
+                <span class="telemetry-val text-highlight">O+ (94.8%)</span>
+              </div>
+              <div class="telemetry-item">
+                <span class="telemetry-label">XAI EXPLAINABILITY</span>
+                <span class="telemetry-val">Captum Saliency</span>
+              </div>
+            </div>
+            
+            <div class="hud-footer">
+              <span class="hud-caption">A Non-Invasive Blood Group Prediction System</span>
+              <a href="#flagship-project" class="hud-link">Run Simulation →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section about-section">
+      <div class="section-container">
+        <div class="section-badge">Career Profile</div>
+        <h2 class="section-title">Driven by AI Innovation & Algorithmic Thinking</h2>
+        <div class="section-divider"></div>
+
+        <div class="about-grid">
+          <div class="about-card glass-panel">
+            <div class="about-icon-wrapper">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 16v-4"></path>
+                <path d="M12 8h.01"></path>
+              </svg>
+            </div>
+            <h3 class="about-card-title">Career Objective</h3>
+            <p class="about-card-text">
+              A highly motivated B.Tech student specializing in <strong>Artificial Intelligence and Machine Learning</strong>, seeking an entry-level <strong>Software Engineering, AI/ML, or Python Developer</strong> role. Strong in problem-solving and algorithmic thinking, eager to leverage technical knowledge and analytical abilities to contribute effectively to organizational growth.
+            </p>
+            <div class="contact-pill-list">
+              <div class="contact-pill">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Tirupati, Andhra Pradesh, India</span>
+              </div>
+              <div class="contact-pill">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <span>+91 9392554749</span>
+              </div>
+              <div class="contact-pill">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span>kullaireddy882@gmail.com</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-card glass-panel">
+            <div class="about-icon-wrapper accent-green">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+            </div>
+            <h3 class="about-card-title">Core Strengths & Pillars</h3>
+            <ul class="strengths-list">
+              <li>
+                <strong>Machine Learning & Computer Vision:</strong> End-to-end expertise in image enhancement, feature engineering, PyTorch CNNs, Albumentations, and ONNX runtime deployment.
+              </li>
+              <li>
+                <strong>Algorithmic Thinking:</strong> Active competitive programmer practicing on LeetCode with rigorous problem-solving in data structures, time complexity, and dynamic systems.
+              </li>
+              <li>
+                <strong>Enterprise Data Analysis:</strong> Hands-on corporate simulation experience with Deloitte and Skill AP analyzing complex datasets, engineering KPI metrics, and actionable visualizations.
+              </li>
+              <li>
+                <strong>Leadership & Teamwork:</strong> Proven experience as Team Coordinator at Mohan Babu University directing university-wide event logistics and inter-departmental collaborations.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS MATRIX SECTION -->
+    <section id="skills" class="section skills-section">
+      <div class="section-container">
+        <div class="section-badge">Technical Arsenal</div>
+        <h2 class="section-title">Skills & Technologies</h2>
+        <p class="section-subtitle">Proficiencies cultivated through academic research, production projects, and competitive programming.</p>
+        <div class="section-divider"></div>
+
+        <!-- Filter Controls -->
+        <div class="filter-controls" id="skillsFilterBar">
+          <button class="filter-btn active" data-category="all">All Skills</button>
+          <button class="filter-btn" data-category="languages">Languages</button>
+          <button class="filter-btn" data-category="aiml">AI, ML & Vision</button>
+          <button class="filter-btn" data-category="web">Web & Backend</button>
+          <button class="filter-btn" data-category="data">Data & Databases</button>
+          <button class="filter-btn" data-category="tools">Tools & Dev</button>
+        </div>
+
+        <!-- Skills Grid -->
+        <div class="skills-grid" id="skillsGrid">
+          <!-- Python -->
+          <div class="skill-card glass-panel" data-category="languages">
+            <div class="skill-header">
+              <div class="skill-icon python-icon">🐍</div>
+              <div class="skill-meta">
+                <h4 class="skill-name">Python</h4>
+                <span class="skill-level">Advanced Core</span>
+              </div>
+            </div>
+            <p class="skill-desc">Object-oriented programming, NumPy vectorization, data pipelines, script automation, and deep learning backbones.</p>
+            <div class="skill-tags">
+              <span>OOP</span><span>Multiprocessing</span><span>Type Hints</span>
+            </div>
+          </div>
+
+          <!-- Java -->
+          <div class="skill-card glass-panel" data-category="languages">
+            <div class="skill-header">
+              <div class="skill-icon java-icon">☕</div>
+              <div class="skill-meta">
+                <h4 class="skill-name">Java</h4>
+                <span class="skill-level">Proficient</span>
+              </div>
+            </div>
+            <p class="skill-desc">Object-oriented principles, collections framework, algorithmic problem solving, robust class architectures.</p>
+            <div class="skill-tags">
+              <span>Collections</span><span>Exception Handling</span><span>DSA</span>
+            </div>
+          </div>
+
+          <!-- PyTorch & Deep Learning -->
+          <div class="skill-card glass-panel" data-category="aiml">
+            <div class="skill-header">
+              <div class="skill-icon pytorch-icon">🔥</div>
+              <div class="skill-meta">
+                <h4 class="skill-name">PyTorch & Deep Learning</h4>
+                <span class="skill-level">Specialized</span>
+              </div>
+            </div>
+            <p class="skill-desc">Custom CNN architectures, neural layers, loss optimization, GPU tensor acceleration, Transfer Learning & ResNets.</p>
+            <div class="skill-tags">
+              <span>Autograd</span><span>CNN</span><span>Loss Functions</span>
+            </div>
+          </div>
+
+          <!-- OpenCV & Albumentations -->
+          <div class="skill-card glass-panel" data-category="aiml">
+            <div class="skill-header">
+              <div class="skill-icon opencv-icon">👁️</div>
+              <div class="skill-meta">
+                <h4 class="skill-name">OpenCV & Albumentations</h4>
+                <span class="skill-level">Specialized</span>
+              </div>
+            </div>
+            <p class="skill-desc">Biometric image processing, Gabor ridge filtering, adaptive thresholding, Zhang-Suen thinning, data augmentation.</p>
+            <div class="skill-tags">
+              <span>Morphology</span><span>Gabor Filters</span><span>Augmentation</span>
+            </div>
+          </div>
+
+          <!-- scikit-learn & Machine Learning -->
+          <div class="skill-card glass-panel" data-category="aiml">
+            <div class="skill-header">
+              <div class="skill-icon sklearn-icon">⚡</div>
+              <div class="skill-meta">
+                <h4 class="skill-name">scikit-learn & ML</h4>
+                <span class="skill-level">Advanced</span>
+              </div>
+            </div>
+            <p class="skill-desc">Supervised/unsupervised algorithms, Random Forests, SVM, meta-classification, cross-validation & hyperparameter tuning.</p>
+            <div class="skill-tags">
+              <span>Ensemble</span><span>Meta-Classifier</span><span>Metrics</span>
+            </div>
+          </div>
+
+          <!-- Captum & Explainable AI (XAI) -->
+          <div class="skill-card glass-panel" data-category="aiml">
+            <div class="skill-header">
+              <div class="skill-icon captum-icon">🔍</div>
+              <div class="skill-meta">
+                <h4 class="skill-name">Captum & Model Interpretability</h4>
+                <span class="skill-level">Research-Grade</span>
+              </div>
+            </div>
+            <p class="skill-desc">Integrated Gradients, Saliency Maps, feature attribution, and explainability for medical/biometric AI decisions.</p>
+            <div class="skill-tags">
+              <span>Integrated Gradients</span><span>Feature Attribution</span><span>Saliency</span>
+            </div>
+          </div>
+
+          <!-- ONNX Runtime & Flask -->
+          <div class="skill-card glass-panel" data-category="web">
+            <div class="skill-header">
+              <div class="skill-icon onnx-icon">🚀</div>
+              <div class="skill-meta">
+                <h4 class="skill-name">ONNX Runtime & Flask</h4>
+                <span class="skill-level">Deployment Ready</span>
+              </div>
+            </div>
+            <p class="skill-desc">Model quantization, graph optimization, sub-20ms inference speed, and microservice REST API wrappers using Flask.</p>
+            <div class="skill-tags">
+              <span>Microservices</span><span>REST API</span><span>Sub-20ms Latency</span>
+            </div>
+          </div>
+
+          <!-- Web Development: HTML & CSS -->
+          <div class="skill-card glass-panel" data-category="web">
+            <div class="skill-header">
+              <div class="skill-icon web-icon">🌐</div>
+              <div class="skill-meta">
+                <h4 class="skill-name">HTML5 & CSS3</h4>
+                <span class="skill-level">Responsive Web</span>
+              </div>
+            </div>
+            <p class="skill-desc">Semantic HTML, Flexbox/CSS Grid layouts, modern Glassmorphism, animations, responsive design and accessibility.</p>
+            <div class="skill-tags">
+              <span>Semantic</span><span>CSS Grid</span><span>Glassmorphism</span>
+            </div>
+          </div>
+
+          <!-- MySQL Database -->
+          <div class="skill-card glass-panel" data-category="data">
+            <div class="skill-header">
+              <div class="skill-icon sql-icon">🗄️</div>
+              <div class="skill-meta">
+                <h4 class="skill-name">MySQL Database</h4>
+                <span class="skill-level">Proficient</span>
+              </div>
+            </div>
+            <p class="skill-desc">Relational database design, schema normalization, multi-table JOINs, subqueries, indexing, and data integrity.</p>
+            <div class="skill-tags">
+              <span>Relational Design</span><span>Complex Queries</span><span>Indexing</span>
+            </div>
+          </div>
+
+          <!-- Pandas & Data Visualization -->
+          <div class="skill-card glass-panel" data-category="data">
+            <div class="skill-header">
+              <div class="skill-icon data-icon">📊</div>
+              <div class="skill-meta">
+                <h4 class="skill-name">Data Analytics & Visualization</h4>
+                <span class="skill-level">Advanced</span>
+              </div>
+            </div>
+            <p class="skill-desc">Pandas data wrangling, missing data imputation, Matplotlib/Seaborn visualization, business KPI generation.</p>
+            <div class="skill-tags">
+              <span>Pandas</span><span>Matplotlib</span><span>Seaborn</span>
+            </div>
+          </div>
+
+          <!-- Developer Tools: VS Code & Git -->
+          <div class="skill-card glass-panel" data-category="tools">
+            <div class="skill-header">
+              <div class="skill-icon tools-icon">🛠️</div>
+              <div class="skill-meta">
+                <h4 class="skill-name">VS Code & Git</h4>
+                <span class="skill-level">Daily Workflow</span>
+              </div>
+            </div>
+            <p class="skill-desc">Interactive debugging, extensions, virtual environment management, version control, branching & GitHub repository workflow.</p>
+            <div class="skill-tags">
+              <span>Git</span><span>Virtualenv</span><span>Debugging</span>
+            </div>
+          </div>
+
+          <!-- LeetCode & Algorithmic Problem Solving -->
+          <div class="skill-card glass-panel" data-category="tools">
+            <div class="skill-header">
+              <div class="skill-icon leetcode-icon">💡</div>
+              <div class="skill-meta">
+                <h4 class="skill-name">LeetCode & Algorithms</h4>
+                <span class="skill-level">Active Competitor</span>
+              </div>
+            </div>
+            <p class="skill-desc">Regular competitive problem solving: Arrays, HashMaps, Two Pointers, Sliding Window, Trees, and Dynamic Programming.</p>
+            <div class="skill-tags">
+              <span>Data Structures</span><span>Time Complexity</span><span>Algorithms</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FLAGSHIP PROJECT SECTION WITH INTERACTIVE 6-STAGE LAB -->
+    <section id="flagship-project" class="section project-section">
+      <div class="section-container">
+        <div class="section-badge accent-purple">Flagship Engineering Project</div>
+        <h2 class="section-title">A Non-Invasive Blood Group Prediction System</h2>
+        <p class="section-subtitle">
+          Utilizing Biometric Fingerprints, Deep Convolutional Embeddings & Explainable AI (Captum XAI) for Rapid Clinical Screening.
+        </p>
+        <div class="section-divider"></div>
+
+        <!-- Project Overview Card -->
+        <div class="project-overview-panel glass-panel">
+          <div class="overview-header">
+            <div class="project-title-area">
+              <span class="tag-pill">Computer Vision & Deep Learning</span>
+              <span class="tag-pill">Medical Biometrics</span>
+              <span class="tag-pill">Explainable AI</span>
+              <h3 class="project-headline">Fingerprint Biometric ABO/Rh Blood Group Classification Pipeline</h3>
+            </div>
+            <div class="project-links">
+              <span class="badge-research">Research Project</span>
+            </div>
+          </div>
+
+          <p class="project-abstract">
+            Traditional blood grouping relies on invasive venipuncture or finger-pricking with chemical reagents.
+            This project develops an intelligent non-invasive screening aid that correlates ridge density, pattern topology (loops, whorls, arches),
+            and minutiae distributions to predict the eight-class <strong>ABO/Rh blood groups (A+, A-, B+, B-, AB+, AB-, O+, O-)</strong>.
+            Engineered through a modular 6-stage architecture incorporating computer vision enhancement, PyTorch deep representations, meta-classification, model interpretability with Captum, and sub-20ms ONNX Runtime deployment.
+          </p>
+
+          <div class="project-highlights-grid">
+            <div class="highlight-box">
+              <div class="hl-number">01</div>
+              <div class="hl-content">
+                <strong>Non-Invasive Screening</strong>
+                <span>Rapid point-of-care preliminary screening without blood drawing or bio-hazardous waste.</span>
+              </div>
+            </div>
+            <div class="highlight-box">
+              <div class="hl-number">02</div>
+              <div class="hl-content">
+                <strong>Advanced Vision Preprocessing</strong>
+                <span>Grayscale conversion, noise filtering, Gabor ridge enhancement, and Zhang-Suen thinning.</span>
+              </div>
+            </div>
+            <div class="highlight-box">
+              <div class="hl-number">03</div>
+              <div class="hl-content">
+                <strong>8-Class Prediction</strong>
+                <span>Differentiates ABO/Rh combinations: A+, A-, B+, B-, AB+, AB-, O+, and O-.</span>
+              </div>
+            </div>
+            <div class="highlight-box">
+              <div class="hl-number">04</div>
+              <div class="hl-content">
+                <strong>Captum Explainability & ONNX</strong>
+                <span>Visualizes neural attention via Integrated Gradients; optimized for low-latency edge deployment.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Clinical Disclaimer Banner -->
+          <div class="disclaimer-banner">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+              <line x1="12" y1="9" x2="12" y2="13"></line>
+              <line x1="12" y1="17" x2="12.01" y2="17"></line>
+            </svg>
+            <span><strong>Medical Ethics & Screening Note:</strong> The system is designed strictly as an assistive non-invasive preliminary screening aid and does not replace confirmatory serological laboratory blood-group testing.</span>
+          </div>
+        </div>
+
+        <!-- LIVE INTERACTIVE PIPELINE SIMULATOR -->
+        <div class="pipeline-lab-wrapper">
+          <div class="lab-header">
+            <div class="lab-title">
+              <span class="live-dot"></span>
+              <h3>Interactive 6-Stage Pipeline Lab</h3>
+            </div>
+            <p class="lab-sub">Click through each pipeline phase below to observe real-time image transformations, minutiae extraction, and neural classification.</p>
+          </div>
+
+          <!-- Pipeline Phase Stepper Buttons -->
+          <div class="pipeline-stepper" id="pipelineStepper">
+            <button class="step-btn active" data-step="1">
+              <span class="step-num">1</span>
+              <span class="step-label">Image Acquisition</span>
+            </button>
+            <button class="step-btn" data-step="2">
+              <span class="step-num">2</span>
+              <span class="step-label">Preprocessing & Thinning</span>
+            </button>
+            <button class="step-btn" data-step="3">
+              <span class="step-num">3</span>
+              <span class="step-label">Minutiae Extraction</span>
+            </button>
+            <button class="step-btn" data-step="4">
+              <span class="step-num">4</span>
+              <span class="step-label">Feature Learning</span>
+            </button>
+            <button class="step-btn" data-step="5">
+              <span class="step-num">5</span>
+              <span class="step-label">Captum XAI Heatmap</span>
+            </button>
+            <button class="step-btn" data-step="6">
+              <span class="step-num">6</span>
+              <span class="step-label">Deployment & ONNX</span>
+            </button>
+          </div>
+
+          <!-- Stage Display Area -->
+          <div class="lab-display-card glass-panel" id="labDisplayCard">
+            <!-- Left Panel: Interactive Visual Canvas -->
+            <div class="lab-visual-column">
+              <div class="visual-canvas-card">
+                <div class="canvas-header">
+                  <span id="canvasStageTag" class="stage-tag">STAGE 1: RAW ACQUISITION</span>
+                  <div class="sample-selector">
+                    <label for="sampleFingerprintSelect">Sample Pattern:</label>
+                    <select id="sampleFingerprintSelect" class="sample-dropdown">
+                      <option value="loop">Right Loop (Typical O+)</option>
+                      <option value="whorl">Concentric Whorl (Typical B+)</option>
+                      <option value="arch">Tented Arch (Typical A+)</option>
+                      <option value="composite">Twin Loop (Typical AB+)</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="canvas-viewport-wrap">
+                  <canvas id="pipelineCanvas" width="340" height="380" class="pipeline-canvas"></canvas>
+                  <div id="canvasOverlayHUD" class="canvas-overlay-hud"></div>
+                </div>
+
+                <div class="canvas-footer-controls">
+                  <button id="runPipelineAnimBtn" class="btn btn-sm btn-outline">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                      <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                    </svg>
+                    Run Automated Sequence
+                  </button>
+                  <button id="resetPipelineBtn" class="btn btn-sm btn-ghost">Reset View</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Panel: Architectural Telemetry & Details -->
+            <div class="lab-details-column">
+              <div class="stage-info-box" id="stageInfoBox">
+                <!-- Dynamically populated by JS according to active step -->
+              </div>
+
+              <!-- Real-time Probability / Metrics Bar -->
+              <div class="inference-telemetry-box">
+                <h4 class="telemetry-box-title">8-Class ABO/Rh Probability Distribution</h4>
+                <div class="prob-distribution-bars" id="probDistributionBars">
+                  <!-- Populated dynamically via JS -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Technologies Used in this Project -->
+        <div class="tech-stack-row">
+          <span class="tech-row-label">Core Pipeline Technologies:</span>
+          <span class="tech-badge">Python 3.10</span>
+          <span class="tech-badge">PyTorch</span>
+          <span class="tech-badge">OpenCV</span>
+          <span class="tech-badge">Albumentations</span>
+          <span class="tech-badge">scikit-learn</span>
+          <span class="tech-badge">Captum (PyTorch XAI)</span>
+          <span class="tech-badge">Flask REST API</span>
+          <span class="tech-badge">ONNX Runtime</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE AI & DATA ANALYTICS LAB -->
+    <section id="analytics-lab" class="section lab-section">
+      <div class="section-container">
+        <div class="section-badge">Practical Analytics</div>
+        <h2 class="section-title">Data Analytics & Machine Learning Lab</h2>
+        <p class="section-subtitle">
+          Interactive metrics and analysis simulating data transformations from Deloitte, DeepLearning.AI, and Skill AP.
+        </p>
+        <div class="section-divider"></div>
+
+        <div class="analytics-tabs-wrapper">
+          <div class="analytics-tab-buttons" id="analyticsTabButtons">
+            <button class="analytics-tab-btn active" data-tab="training">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+              </svg>
+              Neural Loss & Accuracy
+            </button>
+            <button class="analytics-tab-btn" data-tab="confusion">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="3" y1="9" x2="21" y2="9"></line>
+                <line x1="9" y1="21" x2="9" y2="9"></line>
+              </svg>
+              Confusion Matrix
+            </button>
+            <button class="analytics-tab-btn" data-tab="leetcode">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+              </svg>
+              LeetCode & Algorithms
+            </button>
+          </div>
+
+          <div class="analytics-tab-contents glass-panel">
+            <!-- TAB 1: Neural Loss & Accuracy -->
+            <div class="analytics-tab-pane active" id="pane-training">
+              <div class="pane-grid">
+                <div class="chart-container">
+                  <div class="chart-header">
+                    <h4>Convergence Curves: Cross-Entropy Loss vs Epochs</h4>
+                    <span class="badge-status">Epoch 50/50 • Best Val Acc: 94.2%</span>
+                  </div>
+                  <div class="svg-chart-wrap">
+                    <svg viewBox="0 0 500 240" class="interactive-chart" id="lossConvergenceChart">
+                      <!-- Grid Lines -->
+                      <line x1="50" y1="20" x2="480" y2="20" stroke="rgba(255,255,255,0.06)" stroke-dasharray="4"/>
+                      <line x1="50" y1="70" x2="480" y2="70" stroke="rgba(255,255,255,0.06)" stroke-dasharray="4"/>
+                      <line x1="50" y1="120" x2="480" y2="120" stroke="rgba(255,255,255,0.06)" stroke-dasharray="4"/>
+                      <line x1="50" y1="170" x2="480" y2="170" stroke="rgba(255,255,255,0.06)" stroke-dasharray="4"/>
+                      <line x1="50" y1="210" x2="480" y2="210" stroke="rgba(255,255,255,0.15)"/>
+                      <line x1="50" y1="20" x2="50" y2="210" stroke="rgba(255,255,255,0.15)"/>
+
+                      <!-- Axis Labels -->
+                      <text x="35" y="25" fill="#8892b0" font-size="10" text-anchor="end">2.2</text>
+                      <text x="35" y="75" fill="#8892b0" font-size="10" text-anchor="end">1.5</text>
+                      <text x="35" y="125" fill="#8892b0" font-size="10" text-anchor="end">0.9</text>
+                      <text x="35" y="175" fill="#8892b0" font-size="10" text-anchor="end">0.3</text>
+                      <text x="35" y="213" fill="#8892b0" font-size="10" text-anchor="end">0.0</text>
+
+                      <text x="50" y="225" fill="#8892b0" font-size="10">E0</text>
+                      <text x="155" y="225" fill="#8892b0" font-size="10">E12</text>
+                      <text x="260" y="225" fill="#8892b0" font-size="10">E25</text>
+                      <text x="365" y="225" fill="#8892b0" font-size="10">E38</text>
+                      <text x="470" y="225" fill="#8892b0" font-size="10">E50</text>
+
+                      <!-- Training Loss Curve (Cyan) -->
+                      <path d="M 50 40 Q 100 85 160 120 T 280 160 T 380 180 T 480 190" fill="none" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
+                      <!-- Validation Loss Curve (Orange/Coral) -->
+                      <path d="M 50 48 Q 110 95 170 135 T 290 172 T 390 186 T 480 194" fill="none" stroke="#f43f5e" stroke-width="2.5" stroke-dasharray="5 3"/>
+
+                      <!-- Accuracy curve (Green) -->
+                      <path d="M 50 200 Q 120 160 200 110 T 320 65 T 420 48 T 480 42" fill="none" stroke="#10b981" stroke-width="2.5"/>
+
+                      <circle cx="480" cy="190" r="4" fill="#38bdf8"/>
+                      <circle cx="480" cy="194" r="4" fill="#f43f5e"/>
+                      <circle cx="480" cy="42" r="4" fill="#10b981"/>
+                    </svg>
+                  </div>
+                  <div class="chart-legend">
+                    <span class="legend-item"><span class="legend-color cyan"></span> Training Loss (0.16)</span>
+                    <span class="legend-item"><span class="legend-color rose"></span> Validation Loss (0.21)</span>
+                    <span class="legend-item"><span class="legend-color green"></span> Accuracy (94.2%)</span>
+                  </div>
+                </div>
+
+                <div class="chart-narrative">
+                  <h4>Training Optimization Insights</h4>
+                  <p>
+                    Trained using <strong>AdamW optimizer</strong> with cosine annealing learning rate schedule (initial lr = 3e-4) and mixed precision (FP16).
+                    Albumentations was utilized for random rotations (±15°), affine shears, and Gaussian blur to avoid overfitting on ridge spatial configurations.
+                  </p>
+                  <div class="metric-mini-list">
+                    <div class="mini-metric">
+                      <span class="kpi-num">94.2%</span>
+                      <span class="kpi-label">Top-1 Val Accuracy</span>
+                    </div>
+                    <div class="mini-metric">
+                      <span class="kpi-num">98.6%</span>
+                      <span class="kpi-label">Top-2 Val Accuracy</span>
+                    </div>
+                    <div class="mini-metric">
+                      <span class="kpi-num">0.93</span>
+                      <span class="kpi-label">Macro F1 Score</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- TAB 2: Confusion Matrix -->
+            <div class="analytics-tab-pane" id="pane-confusion">
+              <div class="pane-grid">
+                <div class="confusion-matrix-wrap">
+                  <div class="chart-header">
+                    <h4>8-Class ABO/Rh Classification Confusion Matrix</h4>
+                    <span class="badge-status">Normalized Predictions</span>
+                  </div>
+                  <div class="matrix-grid-container" id="confusionMatrixContainer">
+                    <!-- Matrix will be populated dynamically -->
+                  </div>
+                </div>
+
+                <div class="chart-narrative">
+                  <h4>Class Correlation Analysis</h4>
+                  <p>
+                    Rh-positive blood groups (O+, A+, B+, AB+) demonstrate distinguishable ridge frequency distributions compared to Rh-negative counterparts.
+                    The meta-classifier synthesizes spatial ResNet-50 feature embeddings with minutiae density counts to resolve close borderline classifications.
+                  </p>
+                  <div class="insight-pill-group">
+                    <span class="insight-pill">Highest Accuracy: O+ (95.4%)</span>
+                    <span class="insight-pill">B+ Accuracy: 94.1%</span>
+                    <span class="insight-pill">A+ Accuracy: 93.8%</span>
+                    <span class="insight-pill">AB+ Accuracy: 92.6%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- TAB 3: LeetCode & Problem Solving -->
+            <div class="analytics-tab-pane" id="pane-leetcode">
+              <div class="pane-grid">
+                <div class="leetcode-breakdown-card">
+                  <div class="chart-header">
+                    <h4>Algorithmic Problem Solving Breakdown</h4>
+                    <span class="badge-status">Consistent Practice • LeetCode</span>
+                  </div>
+                  <div class="lc-bars-list">
+                    <div class="lc-bar-item">
+                      <div class="lc-bar-info">
+                        <span class="topic-name">Arrays, HashMaps & Two Pointers</span>
+                        <span class="topic-count text-easy">High Proficiency</span>
+                      </div>
+                      <div class="progress-track"><div class="progress-fill easy" style="width: 90%;"></div></div>
+                    </div>
+                    <div class="lc-bar-item">
+                      <div class="lc-bar-info">
+                        <span class="topic-name">Binary Trees & Tree Traversals</span>
+                        <span class="topic-count text-med">Strong Foundation</span>
+                      </div>
+                      <div class="progress-track"><div class="progress-fill med" style="width: 82%;"></div></div>
+                    </div>
+                    <div class="lc-bar-item">
+                      <div class="lc-bar-info">
+                        <span class="topic-name">Breadth & Depth First Search (BFS/DFS)</span>
+                        <span class="topic-count text-med">Solid Knowledge</span>
+                      </div>
+                      <div class="progress-track"><div class="progress-fill med" style="width: 78%;"></div></div>
+                    </div>
+                    <div class="lc-bar-item">
+                      <div class="lc-bar-info">
+                        <span class="topic-name">Dynamic Programming & Recursion</span>
+                        <span class="topic-count text-hard">Active Growth</span>
+                      </div>
+                      <div class="progress-track"><div class="progress-fill hard" style="width: 70%;"></div></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="chart-narrative">
+                  <h4>Core Algorithmic Philosophy</h4>
+                  <p>
+                    Practicing coding problems daily reinforces clean, modular code, rigorous handling of edge cases, and an instinctive focus on <strong>Big-O time and space complexity</strong>.
+                  </p>
+                  <ul class="strengths-list">
+                    <li>Optimal use of Hash Maps for O(1) lookups and sliding windows.</li>
+                    <li>Recursion memoization to avoid redundant subproblem calculations.</li>
+                    <li>Clean object-oriented design and unit test consideration.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERNSHIPS & CERTIFICATIONS SECTION -->
+    <section id="certifications" class="section cert-section">
+      <div class="section-container">
+        <div class="section-badge">Industry Credentials</div>
+        <h2 class="section-title">Internships & Professional Certifications</h2>
+        <p class="section-subtitle">Real-world corporate simulations, comprehensive machine learning certifications, and state government training programs.</p>
+        <div class="section-divider"></div>
+
+        <div class="cert-grid">
+          <!-- Deloitte Simulation -->
+          <div class="cert-card glass-panel">
+            <div class="cert-header">
+              <div class="cert-badge-icon deloitte-bg">D</div>
+              <div class="cert-title-group">
+                <span class="cert-issuer">Deloitte</span>
+                <h3 class="cert-name">Data Analytics Job Simulation</h3>
+              </div>
+            </div>
+            <p class="cert-description">
+              Completed a practical job simulation focused on data analysis, business insight generation, and data visualization. Gained direct exposure to real-world corporate data challenges, data interpretation, and stakeholder communication.
+            </p>
+            <div class="cert-takeaways">
+              <span class="takeaway-chip">Business Intelligence</span>
+              <span class="takeaway-chip">Insight Generation</span>
+              <span class="takeaway-chip">Data Storytelling</span>
+            </div>
+            <div class="cert-footer">
+              <span class="verified-tag">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                Verified Completion
+              </span>
+            </div>
+          </div>
+
+          <!-- DeepLearning.AI Specialization -->
+          <div class="cert-card glass-panel">
+            <div class="cert-header">
+              <div class="cert-badge-icon coursera-bg">DL</div>
+              <div class="cert-title-group">
+                <span class="cert-issuer">DeepLearning.AI • Coursera</span>
+                <h3 class="cert-name">Machine Learning Specialization</h3>
+              </div>
+            </div>
+            <p class="cert-description">
+              Mastered foundational ML concepts including supervised learning (linear regression, logistic regression, neural networks), unsupervised learning (clustering, anomaly detection), and recommender systems with practical model-building and evaluation.
+            </p>
+            <div class="cert-takeaways">
+              <span class="takeaway-chip">Neural Networks</span>
+              <span class="takeaway-chip">Supervised Learning</span>
+              <span class="takeaway-chip">Recommender Systems</span>
+            </div>
+            <div class="cert-footer">
+              <span class="verified-tag">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                Verified Specialization
+              </span>
+            </div>
+          </div>
+
+          <!-- Skill AP Internship -->
+          <div class="cert-card glass-panel">
+            <div class="cert-header">
+              <div class="cert-badge-icon skillap-bg">AP</div>
+              <div class="cert-title-group">
+                <span class="cert-issuer">Skill AP (Govt. of Andhra Pradesh)</span>
+                <h3 class="cert-name">Data Analysis Using Python Internship</h3>
+              </div>
+            </div>
+            <p class="cert-description">
+              Completed an intensive internship focused on Python-based data analysis, data manipulation, exploratory analysis, visualization, and extracting actionable quantitative insights from complex real-world datasets.
+            </p>
+            <div class="cert-takeaways">
+              <span class="takeaway-chip">Python EDA</span>
+              <span class="takeaway-chip">Data Cleaning & Wrangling</span>
+              <span class="takeaway-chip">Government Certified</span>
+            </div>
+            <div class="cert-footer">
+              <span class="verified-tag">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                Verified Internship
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION & LEADERSHIP SECTION -->
+    <section id="education" class="section edu-section">
+      <div class="section-container">
+        <div class="section-badge">Academic Milestones</div>
+        <h2 class="section-title">Education & Campus Leadership</h2>
+        <p class="section-subtitle">Consistent academic excellence backed by hands-on student leadership and community engagement.</p>
+        <div class="section-divider"></div>
+
+        <div class="timeline-leadership-grid">
+          <!-- Left: Education Timeline -->
+          <div class="timeline-column">
+            <h3 class="column-heading">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+              Academic Background
+            </h3>
+
+            <div class="timeline-wrapper">
+              <!-- Item 1: Mohan Babu University -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass-panel">
+                  <div class="timeline-date">Undergraduate Degree</div>
+                  <h4 class="institution-name">Mohan Babu University</h4>
+                  <div class="degree-title">Bachelor of Technology in Artificial Intelligence & Machine Learning</div>
+                  <div class="academic-score-badge">
+                    <span>CGPA:</span>
+                    <strong>7.16 / 10</strong>
+                  </div>
+                  <p class="timeline-desc">
+                    Specialized coursework in Deep Learning, Computer Vision, Pattern Recognition, Natural Language Processing, Data Structures, Design & Analysis of Algorithms, and Database Management Systems.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Item 2: Sri Chaitanya Junior College -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass-panel">
+                  <div class="timeline-date">Higher Secondary Education (Class XII)</div>
+                  <h4 class="institution-name">Sri Chaitanya Junior College</h4>
+                  <div class="degree-title">Board of Intermediate Education (MPC)</div>
+                  <div class="academic-score-badge">
+                    <span>Score:</span>
+                    <strong>82.0%</strong>
+                  </div>
+                  <p class="timeline-desc">
+                    Focused curriculum in Mathematics, Physics, and Chemistry establishing a rigorous analytical foundation for algorithmic computation.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Item 3: Sri Chaitanya Children's Academy -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass-panel">
+                  <div class="timeline-date">Secondary School (Class X)</div>
+                  <h4 class="institution-name">Sri Chaitanya Children's Academy</h4>
+                  <div class="degree-title">Board of Secondary Education</div>
+                  <div class="academic-score-badge highlight">
+                    <span>Score:</span>
+                    <strong>98.2% (Outstanding)</strong>
+                  </div>
+                  <p class="timeline-desc">
+                    Exemplary academic track record reflecting strong work discipline, quantitative reasoning, and academic dedication.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Leadership & Extra-Curricular -->
+          <div class="leadership-column">
+            <h3 class="column-heading">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+              Leadership & Extra-Curriculars
+            </h3>
+
+            <!-- Leadership Card 1: Team Coordinator -->
+            <div class="leadership-card glass-panel">
+              <div class="leadership-icon-box">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <div class="leadership-body">
+                <span class="role-badge">Campus Leadership</span>
+                <h4 class="leadership-title">Team Coordinator</h4>
+                <div class="leadership-org">Mohan Babu University</div>
+                <p class="leadership-text">
+                  Worked as <strong>Team Coordinator</strong> at Mohan Babu University, managing end-to-end event execution, scheduling, inter-student communications, and delegating responsibilities with strong leadership qualities.
+                </p>
+                <div class="skill-tags">
+                  <span>Event Management</span><span>Resource Planning</span><span>Cross-Functional Leadership</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Leadership Card 2: Coding & Hackathons -->
+            <div class="leadership-card glass-panel">
+              <div class="leadership-icon-box accent-purple">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div class="leadership-body">
+                <span class="role-badge">Technical Activities</span>
+                <h4 class="leadership-title">Coding & Competitive Programming</h4>
+                <div class="leadership-org">College Hackathons & Coding Clubs</div>
+                <p class="leadership-text">
+                  Active participant in college hackathons, coding workshops, and peer programming clubs. Regularly solving algorithmic challenges on LeetCode to continuously sharpen problem-solving and technical agility.
+                </p>
+                <div class="skill-tags">
+                  <span>Hackathons</span><span>LeetCode</span><span>Peer Mentoring</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section contact-section">
+      <div class="section-container">
+        <div class="section-badge">Get in Touch</div>
+        <h2 class="section-title">Let's Connect & Collaborate</h2>
+        <p class="section-subtitle">
+          I am actively exploring entry-level Software Engineering, AI/ML Engineer, and Python Developer opportunities.
+        </p>
+        <div class="section-divider"></div>
+
+        <div class="contact-grid">
+          <!-- Left Info Cards -->
+          <div class="contact-info-panel glass-panel">
+            <h3 class="contact-panel-title">Direct Contact Information</h3>
+            <p class="contact-panel-sub">
+              Feel free to reach out directly via email or phone. I respond promptly!
+            </p>
+
+            <div class="contact-methods-list">
+              <!-- Email -->
+              <div class="contact-method-item">
+                <div class="method-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="method-details">
+                  <span class="method-label">Email Address</span>
+                  <a href="mailto:kullaireddy882@gmail.com" class="method-value">kullaireddy882@gmail.com</a>
+                </div>
+                <button class="copy-btn" id="copyEmailAction" title="Copy Email">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Phone -->
+              <div class="contact-method-item">
+                <div class="method-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div class="method-details">
+                  <span class="method-label">Phone & WhatsApp</span>
+                  <a href="tel:+919392554749" class="method-value">+91 9392554749</a>
+                </div>
+                <button class="copy-btn" id="copyPhoneAction" title="Copy Phone">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Location -->
+              <div class="contact-method-item">
+                <div class="method-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="method-details">
+                  <span class="method-label">Location</span>
+                  <span class="method-value">Tirupati, Andhra Pradesh, India</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Fast Action Buttons -->
+            <div class="quick-connect-buttons">
+              <a href="mailto:kullaireddy882@gmail.com?subject=Job%20Opportunity%20-%20AI%2FML%20or%20Software%20Engineer" class="btn btn-primary btn-block">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+                Draft Email to Kullai Reddy
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Interactive Form -->
+          <div class="contact-form-panel glass-panel">
+            <h3 class="contact-panel-title">Send a Quick Message</h3>
+            <form id="contactForm" class="contact-form">
+              <div class="form-group">
+                <label for="contactName">Your Name</label>
+                <input type="text" id="contactName" required placeholder="e.g., Sarah Connor" class="form-control">
+              </div>
+
+              <div class="form-group">
+                <label for="contactEmail">Your Email</label>
+                <input type="email" id="contactEmail" required placeholder="e.g., sarah@company.com" class="form-control">
+              </div>
+
+              <div class="form-group">
+                <label for="contactSubject">Subject / Role Opportunity</label>
+                <input type="text" id="contactSubject" required placeholder="e.g., Software Engineering / AI Engineer Role" class="form-control">
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage">Message</label>
+                <textarea id="contactMessage" rows="4" required placeholder="Hi Kullai Reddy, I came across your portfolio and would like to discuss..." class="form-control"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-secondary btn-block">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="footer-logo">MKR<span class="logo-dot">.ai</span></span>
+        <p class="footer-tagline">Crafting intelligent, data-driven software solutions & robust deep learning systems.</p>
+      </div>
+
+      <div class="footer-nav">
+        <a href="#hero">Top</a>
+        <a href="#about">About</a>
+        <a href="#flagship-project">Flagship Project</a>
+        <a href="#skills">Skills</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Murikinati Kullai Reddy. All rights reserved.</p>
+        <p class="footer-sub">Designed with precision using modern HTML5, CSS3 & JavaScript.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- RESUME PREVIEW & PRINT MODAL -->
+  <div id="resumeModal" class="modal-backdrop" aria-hidden="true" role="dialog">
+    <div class="modal-dialog glass-panel">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+          </svg>
+          <h3>Murikinati Kullai Reddy — Curriculum Vitae</h3>
+        </div>
+        <div class="modal-actions">
+          <button id="printResumeBtn" class="btn btn-sm btn-primary">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 6 2 18 2 18 9"></polyline>
+              <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+              <rect x="6" y="14" width="12" height="8"></rect>
+            </svg>
+            Print / Save PDF
+          </button>
+          <button id="closeResumeModalBtn" class="modal-close-btn" aria-label="Close Resume Modal">&times;</button>
+        </div>
+      </div>
+
+      <div class="modal-body resume-body" id="printableResumeArea">
+        <!-- Structured Executive Resume Content -->
+        <div class="resume-sheet">
+          <header class="resume-header">
+            <h1 class="resume-name">MURIKINATI KULLAI REDDY</h1>
+            <div class="resume-contact-bar">
+              <span>+91 9392554749</span>
+              <span>•</span>
+              <a href="mailto:kullaireddy882@gmail.com">kullaireddy882@gmail.com</a>
+              <span>•</span>
+              <span>Tirupati, Andhra Pradesh, India</span>
+            </div>
+          </header>
+
+          <section class="resume-section">
+            <h2 class="resume-section-heading">CAREER OBJECTIVE</h2>
+            <p class="resume-text">
+              A highly motivated B.Tech student specializing in Artificial Intelligence and Machine Learning, seeking an entry-level Software Engineering, AI/ML, or Python Developer role. Strong in problem-solving and algorithmic thinking, eager to leverage technical knowledge and analytical abilities to contribute effectively to organizational growth.
+            </p>
+          </section>
+
+          <section class="resume-section">
+            <h2 class="resume-section-heading">EDUCATION</h2>
+            <div class="resume-edu-entry">
+              <div class="entry-header">
+                <strong class="entry-inst">Mohan Babu University</strong>
+                <span class="entry-score">CGPA: 7.16 / 10</span>
+              </div>
+              <div class="entry-sub">Bachelor of Technology in Artificial Intelligence & Machine Learning</div>
+            </div>
+
+            <div class="resume-edu-entry">
+              <div class="entry-header">
+                <strong class="entry-inst">Sri Chaitanya Junior College</strong>
+                <span class="entry-score">Percentage: 82%</span>
+              </div>
+              <div class="entry-sub">Class XII (Board of Intermediate Education)</div>
+            </div>
+
+            <div class="resume-edu-entry">
+              <div class="entry-header">
+                <strong class="entry-inst">Sri Chaitanya Children's Academy</strong>
+                <span class="entry-score">Percentage: 98.2%</span>
+              </div>
+              <div class="entry-sub">Class X (Board of Secondary Education)</div>
+            </div>
+          </section>
+
+          <section class="resume-section">
+            <h2 class="resume-section-heading">TECHNICAL SKILLS</h2>
+            <div class="resume-skills-grid">
+              <div class="skill-row">
+                <strong>Languages:</strong> Java, Python
+              </div>
+              <div class="skill-row">
+                <strong>Web Development:</strong> HTML, CSS
+              </div>
+              <div class="skill-row">
+                <strong>Database:</strong> MySQL
+              </div>
+              <div class="skill-row">
+                <strong>Developer Tools:</strong> VS Code, LeetCode
+              </div>
+            </div>
+          </section>
+
+          <section class="resume-section">
+            <h2 class="resume-section-heading">PROJECT</h2>
+            <div class="resume-project-entry">
+              <h3 class="resume-project-title">A Non-Invasive Blood Group Prediction System using Fingerprints and Machine Learning</h3>
+              <ul class="resume-bullets">
+                <li>Developed a machine learning-based system to predict the blood group from fingerprint images as a non-invasive screening approach.</li>
+                <li>Applied fingerprint image preprocessing including grayscale conversion, noise removal, enhancement, and thinning to improve image quality.</li>
+                <li>Extracted fingerprint features such as ridge patterns and minutiae points and used machine learning/deep learning models for eight-class ABO/Rh prediction.</li>
+                <li>Designed a six-stage pipeline covering image acquisition, preprocessing, feature learning, meta-classification, explainability, and deployment.</li>
+                <li>Used technologies including OpenCV, Albumentations, PyTorch, scikit-learn, Captum, Flask, and ONNX Runtime.</li>
+                <li>The system is intended as a screening aid and does not replace confirmatory laboratory blood-group testing.</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="resume-section">
+            <h2 class="resume-section-heading">INTERNSHIP & CERTIFICATIONS</h2>
+            <div class="resume-cert-entry">
+              <strong>Data Analytics Job Simulation – Deloitte</strong>
+              <p>Completed a practical job simulation focused on data analysis, business insight generation, and data visualization; gained exposure to real-world corporate data challenges.</p>
+            </div>
+            <div class="resume-cert-entry">
+              <strong>DeepLearning.AI – Machine Learning Specialization (Coursera)</strong>
+              <p>Mastered core ML concepts including supervised learning, neural networks, unsupervised learning, and recommender systems; applied practical model-building and evaluation concepts.</p>
+            </div>
+            <div class="resume-cert-entry">
+              <strong>Data Analysis Using Python – Skill AP (Govt. of AP)</strong>
+              <p>Completed an intensive internship focused on Python-based data analysis, data manipulation, visualization, and extracting insights from real-world datasets.</p>
+            </div>
+          </section>
+
+          <section class="resume-section">
+            <h2 class="resume-section-heading">EXTRA-CURRICULAR ACTIVITIES & LEADERSHIP</h2>
+            <ul class="resume-bullets">
+              <li><strong>Team Coordinator:</strong> Worked as Team Coordinator at Mohan Babu University, managing event execution and demonstrating leadership qualities.</li>
+              <li><strong>Coding & Competitive Programming:</strong> Active participant in college hackathons and coding clubs, regularly solving problems on LeetCode to enhance algorithmic thinking.</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Box -->
+  <div id="toastNotification" class="toast-notification"></div>
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
